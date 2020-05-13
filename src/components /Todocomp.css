@@ -1,0 +1,25 @@
+.todocomp{
+    position: relative;
+    margin-left: 35%;
+    border: 1px solid;
+    width: 30%;
+    height: 70px;
+    
+}
+.todo{
+ left:20px;
+ text-align: left;
+}
+
+.edit{
+   position: relative;
+   margin:auto;
+   bottom: 45px;
+   left: 135px;
+}
+.dlt{
+    position: relative;
+    margin:auto;
+    bottom: 45px;
+    left: 135px;
+}
