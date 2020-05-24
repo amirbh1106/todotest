@@ -3,16 +3,14 @@ import './Todocomp.css';
 
 
 export function Todocomp(props:any){
+
     return(
-        <div>
-        {
-        !props.state ?  
          <div className = "todocomp">
-            <h1 className="todo">{props.todo}</h1>
-            <button className="edit" onClick={() => console.log(props.todo)}>edit</button>
-            <button className="dlt" onClick={() =>  props.remove(props.passindex)}>x</button>
-        </div> : <div></div>
-        }
+            {!props.state? 
+                <h1 className="todo">{props.todo}</h1>: 
+                <h1 style={{textDecorationLine: 'line-through'}} className="todo">{props.todo}</h1>
+            }
+            <button className="dlt" onClick={() =>  props.remove(props.passindex)}>x</button>   
         </div>
     )
 }

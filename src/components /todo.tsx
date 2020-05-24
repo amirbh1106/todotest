@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState} from 'react';
 import {Input} from './Input'
 import {Todocomp} from './Todocomp'
 
@@ -10,16 +10,18 @@ interface ITodo {
 export function Todoall(){
     const [textarr,settextarr] = useState<ITodo[]>([])
 
-    function todoadded(todo:any){
+    function todoadded(todo:string){
+        if(todo === ""){
+            alert("you cant add nothing brov");
+        }else{
         settextarr([...textarr, {todo , complete : false}]);
+        }
     }
     function onremove(index:number){
         textarr[index].complete = !textarr[index].complete;
-        console.log(textarr[index].complete);
+        settextarr([...textarr]);
+        
     }
-    
-
-
     return(
         <div>
         <Input added={todoadded}/>
