@@ -1,0 +1,14 @@
+.todoapp{
+    position:fixed;
+    width: 40%;
+    left: 30%;
+    top:30px;
+    bottom:10%;
+    background-color:rgb(4, 199, 189);
+}
+
+.input-div{
+    padding: 50px;
+    border-radius: 50%;
+}
+

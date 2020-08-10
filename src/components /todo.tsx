@@ -1,6 +1,7 @@
 import React, { useState} from 'react';
 import {Input} from './Input'
 import {Todocomp} from './Todocomp'
+import './cssfiles/todoapp.css';
 
 interface ITodo {
     todo:string 
@@ -23,7 +24,7 @@ export function Todoall(){
         
     }
     return(
-        <div>
+        <div className="todoapp">
         <Input added={todoadded}/>
         {textarr.map((c , index )=> <Todocomp todo={c.todo} state={c.complete} passindex={index} key={index} remove={onremove}/>)}
         </div>

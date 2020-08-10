@@ -1,5 +1,7 @@
 import React from 'react';
-import './Todocomp.css';
+import './cssfiles/Todocomp.css';
+import Button from 'react-bootstrap/Button';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 export function Todocomp(props:any){
@@ -10,7 +12,7 @@ export function Todocomp(props:any){
                 <h1 className="todo">{props.todo}</h1>: 
                 <h1 style={{textDecorationLine: 'line-through'}} className="todo">{props.todo}</h1>
             }
-            <button className="dlt" onClick={() =>  props.remove(props.passindex)}>x</button>   
+            <Button size="sm" variant="danger" className="dlt" onClick={() =>  props.remove(props.passindex)}>delete</Button>
         </div>
     )
 }
