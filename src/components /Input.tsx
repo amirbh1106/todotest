@@ -8,11 +8,16 @@ export function Input(props:any){
     function handleChange(e:any){
             settext(e.target.value)
         }
+    function handleKeyPress(e:any){
+        if (e.key === "Enter"){
+            props.added(text);
+          }
+    }
 
     return(
-        <div style={{padding : "50px",}}>
-        <input type="text" onChange={handleChange}/>
-        <button onClick={() => props.added(text)}>Add</button>
+        <div style={{padding : "50px",}} onKeyPress={handleKeyPress}>
+        <input type="text" onChange={handleChange} placeholder="todo"/>
+        <button onClick={() => props.added(text)} >Add</button>
         </div>
     )
 }
