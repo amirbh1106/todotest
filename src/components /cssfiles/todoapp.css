@@ -12,3 +12,13 @@
     border-radius: 50%;
 }
 
+@media (max-width: 800px){
+.todoapp{
+    width:80%;
+    left:10%;
+}
+.input-div{
+  width:100%
+}
+}
+

@@ -27,3 +27,34 @@
     color: black;
 }
 
+@media (max-width: 800px){
+    .addbtn{
+        margin-bottom:3.5px;
+    }
+    
+    .todocomp{
+        position: relative;
+        margin-left: 10%;
+        border: 3px solid;
+        width: 80%;
+        height: 70px;
+        border-radius:20px;
+        
+    }
+    .todo{
+        position: relative;
+        left:10px;
+        text-align: left;
+    }
+    
+    .dlt{
+        position: relative;
+        bottom: 41px;
+        left: 166px;
+    }
+    
+    .input{
+        color: black;
+    }
+    
+}
