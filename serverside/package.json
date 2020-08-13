@@ -1,0 +1,22 @@
+{
+  "name": "amirapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node /home/amir/Desktop/todotest/serverside/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amirbh1106/todotest.git"
+  },
+  "author": "amir",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amirbh1106/todotest/issues"
+  },
+  "homepage": "https://github.com/amirbh1106/todotest#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

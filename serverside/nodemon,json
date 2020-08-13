@@ -1,6 +1,0 @@
-{
-  "watch": ["serverside/index.ts"],
-  "ignore": ["src"],
-  "exec": "ts-node /home/amir/Desktop/todotest/serverside/index.ts",
-  "start": "nodemon --legacy-watch /home/amir/Desktop/todotest/serverside/index.ts -L"
-}
