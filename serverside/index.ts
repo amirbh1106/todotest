@@ -7,7 +7,7 @@ app.get("/test/apikey=:apiKey/", (req, res) => {
     if(req.params.apiKey == testapikey){
         res.send("aprove")
     }else{res.send("denied")}
-   
+   console.log("amir");
 })
 
 app.listen(5000);
