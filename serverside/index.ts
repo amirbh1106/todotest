@@ -1,8 +1,9 @@
 const express = require("express");
 const app = express();
+const port = process.env.PORT || 3000
 const testapikey = "absdljskdajldksjald"
 
-app.get("/test/apikey=:apiKey/", (req, res) => {
+app.get("/test/apikey=:apiKey/", (req:any, res:any) => {
     console.log(req.params.apiKey);
     if(req.params.apiKey == testapikey){
         res.send("aprove")
@@ -10,8 +11,8 @@ app.get("/test/apikey=:apiKey/", (req, res) => {
    console.log("amir");
 })
 
-app.listen(5000);
-console.log("server is on on port 5000")
+app.listen(port);
+console.log(`server is on on port ${port}`)
 
 
 
