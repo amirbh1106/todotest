@@ -27,16 +27,18 @@
     color: black;
 }
 
-@media (max-width: 800px){
+@media (max-width: 480px){
     .addbtn{
-        margin-bottom:3.5px;
+        position: relative;
+        margin-left:237px;
+        margin-top:-50px;
     }
     
     .todocomp{
         position: relative;
-        margin-left: 10%;
+        margin-left: 5%;
         border: 3px solid;
-        width: 80%;
+        width: 90%;
         height: 70px;
         border-radius:20px;
         
@@ -50,7 +52,7 @@
     .dlt{
         position: relative;
         bottom: 41px;
-        left: 166px;
+        left: 140px;
     }
     
     .input{
