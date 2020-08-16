@@ -1,7 +1,7 @@
 "use strict";
 var express = require("express");
 var app = express();
-var port = process.env.PORT || 3000;
+var port = process.env.PORT || 3001;
 var testapikey = "absdljskdajldksjald";
 app.get("/test/apikey=:apiKey/", function (req, res) {
     console.log(req.params.apiKey);

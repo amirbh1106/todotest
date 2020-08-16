@@ -5,7 +5,6 @@
   "main": "index.js",
   "scripts": {
     "start":  "tsc && node /home/amir/Desktop/todotest/serverside/index.js"
-
   },
   "repository": {
     "type": "git",
