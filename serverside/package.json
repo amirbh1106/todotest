@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start":  "tsc && node /home/amir/Desktop/todotest/serverside/index.js"
+    "start":  "tsc && node ./serverside/index.js"
   },
   "repository": {
     "type": "git",
