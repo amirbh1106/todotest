@@ -1,0 +1,27 @@
+.loginpage{
+    position: relative;
+    background-color: #1b1c7a;
+    height: 400px;
+    width: 60%;
+    margin-left:20%;
+    margin-top: 5%;
+    
+}
+.username{
+    position: relative;
+    height: 20px;
+    top: 36px;
+    left:-10px;
+}
+
+.password{
+    position: absolute;
+    height: 20px;
+    top:172px;
+    left: 405px;
+}
+
+.submit{
+    position: absolute;
+    top:135px;
+}
