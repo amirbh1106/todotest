@@ -1,12 +1,10 @@
 import React, { useState} from 'react';
 // import {Todoall} from './todo';
 import './cssfiles/login.css';
-// import {
-//     BrowserRouter as Router,
-//     Switch,
-//     Route,
-//     Link
-//   } from "react-router-dom";
+import {
+    // BrowserRouter as Router,
+    Redirect
+  } from "react-router-dom";
 
 interface IUser {
     usern:string 
@@ -20,6 +18,9 @@ const[usern,setnuser] = useState("");
 const[userp,setpuser] = useState("");
 const[user,setuser] = useState<IUser[]>([])
 
+function TransfertoLogin() {
+    return <Redirect to="/" />
+}
 function handleuChange(e:any){
     setnuser(e.target.value)
 }
@@ -39,6 +40,7 @@ function handlesubmit(){
     else{setuser([...user, {usern , userp , aproved:false}])
     setnuser("");
     setpuser("");
+    TransfertoLogin();
     }
     
 }

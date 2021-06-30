@@ -1,27 +1,37 @@
 .loginpage{
     position: relative;
     background-color: #1b1c7a;
-    height: 400px;
-    width: 60%;
-    margin-left:20%;
-    margin-top: 5%;
-    
+    height: 30vw;
+    width: 60vw;
+    margin-left: 20vw;
+    margin-top:  5vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "."
+    "."; 
 }
 .username{
     position: relative;
     height: 20px;
-    top: 36px;
-    left:-10px;
+    top: -6vw;
+    left: 22vw;
+    width: 15vw;
 }
 
 .password{
-    position: absolute;
+    position: relative;
     height: 20px;
-    top:172px;
-    left: 405px;
+    top: -16vw;
+    left: 22vw;
+    width: 15vw;
 }
 
 .submit{
-    position: absolute;
-    top:135px;
+    position: relative;
+    top: -17.2vw;
+    left: 39vw;
+    width: 4vw;
 }
